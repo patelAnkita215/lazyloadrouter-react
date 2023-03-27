@@ -5,6 +5,7 @@ import WelcomeToClassCompo from './01WelcomeToClassCompo';
 import ClassCompoConstructor from './02ClassCompoConstructor';
 import ClassCompoState from './03ClassCompoState';
 import ClassCompojsx from './04ClassCompojsx';
+import PropsCompo from './05PropsCompo';
 
 class ClassCompRoute extends Component {
     render() {
@@ -16,6 +17,7 @@ class ClassCompRoute extends Component {
                         <Route path="classcompoconstructor" element={<ClassCompoConstructor />} />
                         <Route path="classcompostate" element={<ClassCompoState />} />
                         <Route path="classcompojsx" element={<ClassCompojsx />} />
+                        <Route path="props" element={<PropsCompo />} />
                     </Route>
                 </Routes> 
             </>
