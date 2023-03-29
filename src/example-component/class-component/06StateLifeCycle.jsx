@@ -5,16 +5,25 @@ class StateLifeCycleCompo extends Component {
         return (
             <>
                 <div className="class-content mt-2 border-top">
-                    <h5 className='text-dark border-bottom py-2 fw-bold'>Props:</h5>
+                    <h5 className='text-dark border-bottom py-2 fw-bold'>State Life Cycle:</h5>
                     <ul className='sub-content'>
                         <li>
-                            <p>props in React to <strong className='text-primary'> pass data from one component to another (from a parent component to a child component(s))</strong>.</p>
+                            <p><strong className='text-info'>Mounting:</strong> <strong>Birth</strong> of your component.</p>
                         </li>
                         <li>
-                            <p>Props is just a shorter way of saying properties.</p>
+                            <p><strong className='text-info'>Update:</strong> <strong>Growth</strong> of your component.</p>
                         </li>
                         <li>
-                            <p>They are useful when you want the flow of data in your app to be dynamic.</p>
+                            <p><strong className='text-info'>Unmount:</strong> <strong>Death</strong> of your component.</p>
+                        </li>
+                        <li>
+                            <p><strong>Methods in react component in lifecycle:</strong></p>
+                            <ul className='sub-content mt-2'>
+                                <li className='mb-1'><p><strong>Render&#40;&#41;</strong> - not modify state method.</p></li>
+                                <li className='mb-1'><p><strong>ComponentDidMount&#40;&#41;</strong> - after run render method.</p></li>
+                                <li className='mb-1'><p><strong>ComponentDidUpdate&#40;&#41;</strong> - updating data.</p></li>
+                                <li className='mb-1'><p><strong>ComponentWillUnmount&#40;&#41;</strong> - just run before unmounting method.</p></li>
+                            </ul>
                         </li>
                         
                     </ul>
