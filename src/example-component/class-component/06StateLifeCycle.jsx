@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
-class PropsCompo extends Component {
+class StateLifeCycleCompo extends Component {
     render() {
         return (
             <>
@@ -17,10 +16,6 @@ class PropsCompo extends Component {
                         <li>
                             <p>They are useful when you want the flow of data in your app to be dynamic.</p>
                         </li>
-                        <li>
-                            <p>For Example click here...</p>
-                            <Link to="../props-example" className='btn btn-primary'>Demo Link</Link>
-                        </li>
                         
                     </ul>
                 </div>
@@ -29,4 +24,4 @@ class PropsCompo extends Component {
     }
 }
 
-export default PropsCompo;
+export default StateLifeCycleCompo;
