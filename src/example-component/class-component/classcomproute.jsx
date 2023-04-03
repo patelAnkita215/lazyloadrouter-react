@@ -8,6 +8,9 @@ import ClassCompojsx from './04ClassCompojsx';
 import PropsCompo from './05PropsCompo';
 import LifeCycleCompo from './06StateLifeCycle';
 import PropsExampleComp from './props-example/props-example';
+import ExampleLifeCycle from './ExampleLifeCycle';
+import ConditionalRender from './08.conditionalrender';
+import RenderingExample from './RenderingExample';
 
 class ClassCompRoute extends Component {
     render() {
@@ -22,6 +25,9 @@ class ClassCompRoute extends Component {
                         <Route path="props" element={<PropsCompo />} />
                         <Route path="lifecycle" element={<LifeCycleCompo />} />
                         <Route path="props-example" element={<PropsExampleComp />} />
+                        <Route path="exampleLifeCycle" element={<ExampleLifeCycle/>}/>
+                        <Route path="conditionalrender" element={<ConditionalRender/>}/>
+                        <Route path="renderingexample" element={<RenderingExample/>}/>
                     </Route>
                 </Routes> 
             </>

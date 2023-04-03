@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class StateLifeCycleCompo extends Component {
     render() {
@@ -25,8 +26,12 @@ class StateLifeCycleCompo extends Component {
                                 <li className='mb-1'><p><strong>ComponentWillUnmount&#40;&#41;</strong> - just run before unmounting method.</p></li>
                             </ul>
                         </li>
-                        
+                        <li>
+                     <p>For Example click here...</p>
+                            <Link to="../exampleLifeCycle" className='btn btn-primary'>Demo Link</Link>
+                            </li>
                     </ul>
+                   
                 </div>
             </>
         );

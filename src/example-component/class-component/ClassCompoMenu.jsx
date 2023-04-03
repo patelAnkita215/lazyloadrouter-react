@@ -15,6 +15,7 @@ class ClassCompoIntro extends Component {
                       <li><Link to="classcompojsx">04. JSX In Class Compo</Link></li>
                       <li><Link to="props">05. Props</Link></li>
                       <li><Link to="lifecycle">06. State LifeCycle</Link></li>
+                      <li><Link to="conditionalrender">07.ConditionalRendering</Link></li>
                     </ul>
                     <Outlet></Outlet>
           </div>
