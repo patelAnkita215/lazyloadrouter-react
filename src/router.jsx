@@ -8,8 +8,17 @@ import ExampleComponent from "./example-component";
 
 const ExampleCompoRoute = React.lazy(()=>{ return import('./example-component/component-name-route') })
 const MainRouter = createBrowserRouter([
+  // {
+  //   path: "/",
+  //   element: (
+  //     <>
+  //       <HeaderComp />
+  //       <HomePage />
+  //     </>
+  //   ),
+  // },
   {
-    path: "/",
+    path: "/home",
     element: (
       <>
         <HeaderComp />

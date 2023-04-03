@@ -4,13 +4,21 @@ import "../assets/header.css";
 
 
 class HeaderComponent extends Component {
+  constructor(props) {
+    super(props);
+  }
+
     render() {
+      const data = ["home","about","contact","component"];
+      const MenuData = data.map((dt,index) => {
+        return <Link to={`/${dt}`} key={index} className="nav-link">{dt}</Link>
+      })
         return (
             <>
               <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
             <div className="d-flex align-items-center justify-content-between w-100">
-              <Link to="/" className="navbar-brand">
+              <Link to="/home" className="navbar-brand">
                 Logo
               </Link>
               <button
@@ -27,10 +35,11 @@ class HeaderComponent extends Component {
             </div>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav">
-                <Link to="/" className="nav-link">
-                  Home
-                </Link>
-                <Link to="/about" className="nav-link">
+              {MenuData}
+                {/* <Link to="/" className="nav-link">
+                 {MenuData}
+                </Link> */}
+                {/* <Link to="/about" className="nav-link">
                   About Us
                 </Link>
                 <Link to="/contact" className="nav-link">
@@ -38,7 +47,7 @@ class HeaderComponent extends Component {
                 </Link>
                 <Link to="/component" className="nav-link">
                   Component
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
